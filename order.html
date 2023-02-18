@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cont">
+        <header class="navigation">
+            <div class="logo"><img src="./img/logo.jpg" alt=""></div>
+
+            <div class="nav">
+                <a href="index.html">
+                    <li>მთავარი</li>
+                </a>
+                <a href="pricing.html">
+                    <li>ფასები</li>
+                </a>
+                <a href="">
+                    <li>ჩვენს შესახებ</li>
+                </a>
+                <a href="">
+                    <li>კონტაქტი</li>
+                </a>
+                <a href="">
+                    <li>ვაკანსიები</li>
+                </a>
+            </div>
+
+            <div class="btn">
+                <button class="log-in">შესვლა</button>
+                <button class="sign-up">რესგისტრაცია</button>
+            </div>
+
+
+            <div class="mobile-tablet-navigation">
+                <h1 onclick="nav()" class="nav-button">≣</h1>
+
+                <div class="mobile-tablet-link">
+
+                    <a href="index.html">
+                        <li>მთავარი</li>
+                    </a>
+                    <a href="">
+                        <li>ფასები</li>
+                    </a>
+                    <a href="about.html">
+                        <li>ჩვენს შესახებ</li>
+                    </a>
+                    <a href="">
+                        <li>კონტაქტი</li>
+                    </a>
+                    <a href="">
+                        <li>ვაკანსიები</li>
+                    </a>
+
+                </div>                
+        </header>
+    </div>
+
+    <div class="cont">
+        <div class="calendar">
+            <form action="/action_page.php">
+                <label class="calendar-header" for="birthday"><h1 class="calendar-header">შეარჩიე შენთვის სასურველი დღე</h1></label>
+                <input type="date" id="birthday" name="birthday">                               
+              </form>
+              <button onclick="order()" id="submit">დაჯავშნა</button> 
+        </div>
+
+        <div class="after-submit">
+            <h2 class="submit-text"> თქვენ დაგირეკავთ მონა და შეგითანხმდებათ დროზე</h2>
+
+            <button onclick="orderBack()" class="btn-submit-back">OK</button>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <h1 class="footer-text">FOOTER</h1>
+        <p class="footer-contant">Sokhumi, str. karl Marx, Georgia <br> ☏ +666 6666 6666</p>
+        <div class="footer-icon">
+            <img src="./img/icon-facebook.svg" alt="">
+            <img src="./img/icon-twitter.svg" alt="">
+            <img src="./img/icon-instagram.svg" alt="">
+        </div>
+    </footer>
+   
+    <!-- js -->
+    <script src="js.js"></script>
+</body>
+
+</html>

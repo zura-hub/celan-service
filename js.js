@@ -8,6 +8,7 @@ function nav() {
     }
 }
 
+// service list
 
 function showList() {
     const hideServ = document.querySelector('.serv-list');
@@ -35,3 +36,26 @@ function showList() {
 window.onload = function() {
     showList();
   };
+
+
+//   calendar
+
+function order(){
+    const hideOrder = document.querySelector('.calendar');
+    const afterSubmit = document.querySelector('.submit-text');
+    const submitBackBtn = document.querySelector('.btn-submit-back');
+
+    hideOrder.style.display = 'none'
+    afterSubmit.style.display = 'block'
+    submitBackBtn.style.display = 'block'
+}
+
+function orderBack(){
+    const hideOrder = document.querySelector('.calendar');
+    const afterSubmit = document.querySelector('.submit-text');
+    const submitBackBtn = document.querySelector('.btn-submit-back');
+
+    hideOrder.style.display = 'block'
+    afterSubmit.style.display = 'none'
+    submitBackBtn.style.display = 'none'
+}
