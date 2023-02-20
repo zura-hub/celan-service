@@ -9,38 +9,39 @@ function nav() {
 }
 
 // service list
-
 function showList() {
-    const hideServ = document.querySelector('.serv-list');
-    const priwave = ["დალაგება", "ყავის მომზადება", "ჩაის მომზადება", "ფეხსაცმლის გაწმენდა"];
-    let i = 0;
+    const servOne = document.querySelector('.serv-one');
+    const servTwo = document.querySelector('.serv-two');
+    const servThree = document.querySelector('.serv-three');
+    const servFour = document.querySelector('.serv-four');
 
-    if (hideServ.style.display === "none") {
-        hideServ.style.display = "block";
-    } else {
-        hideServ.style.display = "none"
-    }
 
-    const intervalId = setInterval(function () {
-        console.log(priwave[i]);
-        i++;
-        if (i === priwave.length) {
-            clearInterval(intervalId);
-            }
-        }, 1000);   
+    setInterval(() => {
+        servOne.style.display = 'block'
+    }, 2000);
 
-        document.querySelector('.serv-list').innerHTML = priwave.join('<br>');
+    setInterval(() => {
+        servTwo.style.display = 'block'
+    }, 3000);
+
+    setInterval(() => {
+        servThree.style.display = 'block'
+    }, 4004);
+
+    setInterval(() => {
+        servFour.style.display = 'block'
+    }, 5000);
 }
 
+window.onload = function () {
+    showList()
+}
 
-window.onload = function() {
-    showList();
-  };
 
 
 //   calendar
 
-function order(){
+function order() {
     const hideOrder = document.querySelector('.calendar');
     const afterSubmit = document.querySelector('.submit-text');
     const submitBackBtn = document.querySelector('.btn-submit-back');
@@ -50,7 +51,7 @@ function order(){
     submitBackBtn.style.display = 'block'
 }
 
-function orderBack(){
+function orderBack() {
     const hideOrder = document.querySelector('.calendar');
     const afterSubmit = document.querySelector('.submit-text');
     const submitBackBtn = document.querySelector('.btn-submit-back');

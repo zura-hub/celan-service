@@ -67,20 +67,20 @@
     </div>
 
     <div class="cont">
-        <div class="calendar">
-            <form action="/action_page.php">
-                <label class="calendar-header" for="birthday"><h1 class="calendar-header">შეარჩიე შენთვის სასურველი დღე</h1></label>
-                <input type="date" id="birthday" name="birthday">                               
-              </form>
-              <button onclick="order()" id="submit">დაჯავშნა</button> 
-        </div>
+        <h1 class="vacancy-header">გახდი ჩვენი გუნდის წევრი</h1>
 
-        <div class="after-submit">
-            <h2 class="submit-text"> თქვენ დაგირეკავთ მონა და შეგითანხმდებათ დროზე</h2>
-
-            <button onclick="orderBack()" class="btn-submit-back">OK</button>
+        <div class="vacancy-inputs">
+            <input type="text" placeholder="სახელი">
+            <input type="text" placeholder="გვარი">
+            <input type="phone" placeholder="მობიური">
+            <textarea id="text-area"> </textarea>
+            <p class="check"><input id="chek-box" type="checkbox"><a href="">წესები და პირობები</a></p>
+            <input type="file" id="myfile" name="myfile" multiple><br><br>            
+            <input id="submit-btn" type="submit">
+            
         </div>
     </div>
+
     <!-- footer -->
     <footer class="footer">
         <h1 class="footer-text">FOOTER</h1>
@@ -88,7 +88,7 @@
         <div class="footer-icon">
             <img src="./img/icon-facebook.svg" alt="">
             <img src="./img/icon-twitter.svg" alt="">
-            <img src="./img/icon-instagram.svg" alt="">
+            <img id="therd-input" src="./img/icon-instagram.svg" alt="">
         </div>
     </footer>
    

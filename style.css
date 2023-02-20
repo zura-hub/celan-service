@@ -24,13 +24,13 @@ body {
 }
 
 .nav {
-    display: none;
+    display: none;    
 }
 
 .mobile-tablet-navigation {
     display: block;
     right: 0;
-    list-style: none;
+    list-style: none;    
 }
 
 .nav-button {
@@ -47,6 +47,8 @@ body {
     right: 20px;
     padding-top: 15px;
     text-align: right;
+    background-color: #9c9a9a;
+    border-radius: 4px;
 }
 
 .mobile-tablet-link li {
@@ -206,19 +208,19 @@ body {
     cursor: pointer;
 }
 
-.after-submit{
+.after-submit {
     margin-bottom: 30px;
 }
 
-.submit-text{
+.submit-text {
     width: 100%;
     text-align: center;
     display: none;
     height: 200px;
-    margin-bottom: -50px;    
+    margin-bottom: -50px;
 }
 
-.btn-submit-back{    
+.btn-submit-back {
     width: 150px;
     height: 40px;
     display: block;
@@ -228,6 +230,81 @@ body {
     background-color: #0c5246;
     color: white;
 }
+
+
+/* Service List */
+
+.serv-one{
+    display: none;
+    font-size: 30px;
+}
+
+.serv-two{
+    display: none;
+    font-size: 30px;
+}
+
+.serv-three{
+    display: none;
+    font-size: 30px;
+}
+
+.serv-four{
+    display: none;
+    font-size: 30px;
+}
+
+/* about */
+.about-paragrap {
+    margin-bottom: 300px;
+}
+
+.about-header {
+    margin-bottom: 50px;
+}
+
+
+/* inputs */
+
+.vacancy-header {
+    font-size: 21px;
+}
+
+.vacancy-inputs input {
+    width: 100%;
+    height: 25px;
+    margin-top: 20px;
+}
+
+.vacancy-inputs {
+    margin-bottom: 100px;
+}
+
+#text-area {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#therd-input {
+    margin-bottom: 10px;
+}
+
+
+.check{
+    display: flex;
+    transform: translateX(-90px);
+}
+
+.check a{
+    transform: translateX(-80px);
+    margin-top: 19px;
+    font-size: 10px;    
+}
+
+
+
+
+
 
 /* tablet */
 @media screen and (min-width: 768px) {
@@ -241,7 +318,6 @@ body {
     }
 
     .nav-button {
-        position: fixed;
         margin-top: -15px;
         right: 10;
     }
@@ -564,10 +640,48 @@ body {
         cursor: pointer;
     }
 
-    .submit-text{
+    .submit-text {
         width: 100%;
         text-align: center;
         display: none;
+    }
+
+    /* inputs */
+
+    .vacancy-header {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .vacancy-inputs input {
+        width: 100%;
+        height: 25px;
+        margin-top: 20px;
+    }
+
+    .vacancy-inputs {
+        margin-bottom: 100px;
+    }
+
+    #text-area {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #therd-input {
+        margin-bottom: 10px;
+    }
+
+    .check{
+        display: flex;
+        transform: translateX(-290px);
+    }
+
+    .check a{
+        transform: translateX(-270px);
+        margin-top: 17px;
+        font-size: 10px;
+        
     }
 }
 
@@ -611,6 +725,7 @@ body {
         margin-bottom: 40px;
     }
 
+   
     .calendar-header {
         padding-top: 40px;
         font-size: 25px;
@@ -642,9 +757,38 @@ body {
         margin-top: 170px;
     }
 
-    .submit-text{
+    .submit-text {
         width: 100%;
         text-align: center;
         display: none;
+    }
+
+    .vacancy-header{
+        font-size: 30px;
+    }
+    .vacancy-inputs{
+        width: 600px;
+        display: block;
+        margin: auto;
+    }
+
+    .check{
+        display: flex;
+        transform: translateX(-250px);
+        
+    }
+    
+    .check a{
+        transform: translateX(-220px);
+        margin-top: 19px;
+        font-size: 10px;    
+    }
+
+    #submit-btn{
+        width: 150px;
+    }
+
+    #text-area{
+        height: 100px;
     }
 }
